@@ -35,7 +35,7 @@ def predict_prices(dates,prices):
     plt.legend()
     plt.show()
 
-get_data("/Users/omerkaanayvaz/Desktop/python_bu_sefer_bitti/1000daymachinelearning/DAY_2/AAPL (1).csv")
+get_data("AAPL.CSV")
 
 predict_prices(dates,prices)
 
