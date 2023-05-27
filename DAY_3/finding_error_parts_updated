@@ -1,0 +1,18 @@
+import csv
+
+from sklearn import tree
+
+x_lenght = [] # takes all lenght imputs
+y_lenght = []
+z_lenght = []
+total_dimensions = [] #put them into as list in list
+quality_control = [] 
+
+def analysis_a_given_part(X): # X must be list
+    csvFileReader = csvFileReader("/Users/omerkaanayvaz/Desktop/python_bu_sefer_bitti/1000daymachinelearning/DAY_3/Book1.csv")
+    return
+
+
+# Creating a CSV file take more then my expection
+
+
