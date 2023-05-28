@@ -8,9 +8,20 @@ z_lenght = []
 total_dimensions = [] #put them into as list in list
 quality_control = [] 
 
-def analysis_a_given_part(X): # X must be list
-    csvFileReader = csvFileReader("/Users/omerkaanayvaz/Desktop/python_bu_sefer_bitti/1000daymachinelearning/DAY_3/Book1.csv")
-    return
+def analysis_a_given_part(): # X must be list
+   with open ("/Users/omerkaanayvaz/Desktop/python_bu_sefer_bitti/1000daymachinelearning/DAY_3/Book1.csv") as csvfile:
+      csvFileReader = csv.reader(csvfile)
+      next(csvFileReader)
+      for row in csvFileReader:
+         x_lenght.append(float(row[1]))
+         y_lenght.append(float(row[2]))
+         z_lenght.append(float(row[3]))
+         quality_control.append(row[0])
+   return print(x_lenght,y_lenght,z_lenght) 
+
+analysis_a_given_part()
+      
+    
 
 
 # Creating a CSV file take more then my expection
